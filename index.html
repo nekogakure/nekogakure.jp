@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ねこがくれ - ホーム</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="bg-white shadow-sm sticky top-0 z-30">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <a class="text-xl font-semibold text-slate-900" href="#">ねこがくれ</a>
+          <div class="hidden md:flex space-x-6">
+            <a class="text-slate-700 hover:text-slate-900" href="#about">プロフィール</a>
+            <a class="text-slate-700 hover:text-slate-900" href="#projects">プロジェクト</a>
+            <a class="text-slate-700 hover:text-slate-900" href="#contact">連絡先</a>
+          </div>
+          <div class="md:hidden">
+            <button id="menuBtn" class="p-2 rounded-md text-slate-700 hover:bg-slate-100">☰</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="bg-gradient-to-b from-white to-gray-50">
+      <div class="max-w-6xl mx-auto px-4 py-12 grid lg:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1 class="text-4xl font-extrabold text-slate-900">ねこがくれ</h1>
+          <p class="mt-3 text-slate-600">中二のプログラマ。「美しさ」を追い求めています</p>
+          <div class="mt-6 flex gap-3">
+            <a href="#projects" class="inline-flex items-center px-4 py-2 bg-slate-900 text-white rounded-md">View Projects</a>
+            <a href="#contact" class="inline-flex items-center px-4 py-2 border border-slate-200 text-slate-700 rounded-md">Contact</a>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="bg-white rounded-xl shadow p-6 w-56 text-center">
+            <svg class="mx-auto w-28 h-28 rounded-lg" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+              <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#ffd86f"/><stop offset="1" stop-color="#ff7eb6"/></linearGradient></defs>
+              <rect width="128" height="128" rx="20" fill="url(#g)"/>
+              <g transform="translate(16,20)" fill="#fff">
+                <circle cx="48" cy="32" r="20" opacity="0.95"/>
+                <rect x="6" y="66" width="84" height="26" rx="12" opacity="0.9"/>
+              </g>
+            </svg>
+            <h5 class="mt-3 text-lg font-semibold text-slate-900">ねこがくれ</h5>
+            <p class="text-sm text-slate-500">C / Rust / TS / ASM / UEFI</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="my-5">
+      <section id="about" class="bg-white py-12 mb-4">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-2xl font-semibold text-slate-900 mb-3">About</h2>
+          <p class="text-slate-600">自作OSであるliteCoreの開発などの低レイヤから、oriniumというブラウザなどの開発まで幅広く取り組んでいます。</p>
+        </div>
+      </section>
+
+      <section id="projects" class="bg-gray-50 py-12 mb-4">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-2xl font-semibold text-slate-900 mb-6">Projects</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div>
+              <article class="bg-white rounded-lg shadow p-6 flex flex-col justify-between h-full">
+                <div>
+                  <h3 class="text-lg font-semibold text-slate-900 mb-2">liteCore</h3>
+                  <p class="text-slate-600">現在開発中の自作OS。軽量で高速な設計を目指しています。</p>
+                </div>
+                <div class="mt-4">
+                  <a href="https://github.com/nekogakure/liteCore" class="text-indigo-600 font-medium hover:underline">Github</a>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article class="bg-white rounded-lg shadow p-6 flex flex-col justify-between h-full">
+                <div>
+                  <h3 class="text-lg font-semibold text-slate-900 mb-2">orinium Browser</h3>
+                  <p class="text-slate-600">現在開発中のブラウザ。使いやすさと拡張性を意識。</p>
+                </div>
+                <div class="mt-4">
+                  <a href="https://github.com/orinium-browser/orinium" class="text-indigo-600 font-medium hover:underline">Github</a>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article class="bg-white rounded-lg shadow p-6 flex flex-col justify-between h-full">
+                <div>
+                  <h3 class="text-lg font-semibold text-slate-900 mb-2">modernC</h3>
+                  <p class="text-slate-600">Cをモダンに拡張するライブラリ</p>
+                </div>
+                <div class="mt-4">
+                  <a href="https://github.com/nekogakure/modernC" class="text-indigo-600 font-medium hover:underline">Github</a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-white py-12 mb-6">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2 class="text-2xl font-semibold text-slate-900 mb-3">Contact</h2>
+          <div class="flex gap-3 flex-wrap">
+            <a class="inline-flex items-center px-3 py-2 border border-slate-200 rounded-md text-slate-700" href="https://twitter.com/nek0_dev" target="_blank">X</a>
+            <a class="inline-flex items-center px-3 py-2 border border-slate-200 rounded-md text-slate-700" href="mailto:info@mail.nekogakure.jp">mail</a>
+            <a class="inline-flex items-center px-3 py-2 border border-slate-200 rounded-md text-slate-700" href="https://github.com/nekogakure" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slate-900 text-white py-8">
+      <div class="max-w-6xl mx-auto px-4 text-center text-sm">© 2026 ねこがくれ</div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      document.getElementById('menuBtn')?.addEventListener('click', ()=>{
+        // ToDo: はんばーがーめにゅー
+      })
+    </script>
+  </body>
+</html>
